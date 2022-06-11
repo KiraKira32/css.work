@@ -294,8 +294,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-	padding-left: 24px;
-	margin-bottom: 32px;
+	margin: 0px auto 32px auto;
 }
 
 .content__panel__box__left {
@@ -563,13 +562,10 @@ body {
 	}
 
 	.content__panel__box {
-		width: 303px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		text-align: center;
-		padding-left: 16px;
-		margin-bottom: 27px;
+		width: 100%;
+		margin: 0px auto 24px auto;
+		padding-left: 0;
+		justify-content: space-around;
 	}
 
 	.content__panel__box__left {
@@ -615,8 +611,8 @@ body {
 	}
 
 	.content__panel__list {
+		margin: 0px auto 0px auto;
 		img {
-			padding: 0px 16px 0px 16px;
 			margin-bottom: 16px;
 		}
 
@@ -626,7 +622,7 @@ body {
 	}
 
 	.content__panel__list__bottom {
-		margin: 19px 90px 0px 100px;
+		margin: auto;
 	}
 
 	.question {

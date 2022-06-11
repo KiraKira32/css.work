@@ -320,8 +320,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-left: 24px;
-  margin-bottom: 32px;
+  margin: 0px auto 32px auto;
 }
 
 .content__panel__box__left {
@@ -602,19 +601,11 @@ body {
     margin-top: 24px;
   }
   .content__panel__box {
-    width: 303px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    padding-left: 16px;
-    margin-bottom: 27px;
+    width: 100%;
+    margin: 0px auto 24px auto;
+    padding-left: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .content__panel__box__left {
     font-size: 12px;
@@ -650,15 +641,17 @@ body {
   .content__panel__box__p .content__panel__box__sapn {
     font-size: 12px;
   }
+  .content__panel__list {
+    margin: 0px auto 0px auto;
+  }
   .content__panel__list img {
-    padding: 0px 16px 0px 16px;
     margin-bottom: 16px;
   }
   .content__panel__list .contnet__panel__text {
     font-size: 13px;
   }
   .content__panel__list__bottom {
-    margin: 19px 90px 0px 100px;
+    margin: auto;
   }
   .question {
     width: 100%;
