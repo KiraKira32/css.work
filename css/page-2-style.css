@@ -2,19 +2,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +110,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -55,6 +136,13 @@ table {
 body {
   font-family: 'Noto Sans TC', sans-serif;
   background: #FFF;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrap {
@@ -72,24 +160,20 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 24px 0px 0px 139px;
+  padding: 24px 139px 0px 139px;
 }
 
 .header__title .header__logo {
   width: 218px;
-}
-
-.header__title .header__item {
-  padding-right: 139px;
+  height: 40px;
 }
 
 .header__title .header__price {
-  width: 128px;
-  height: 40px;
+  padding: 8px 32px 8px 32px;
   background: #FF5D50;
   text-align: center;
-  line-height: 40px;
-  border-radius: 20px;
+  line-height: 24px;
+  border-radius: 50px;
   color: #FFF;
 }
 
@@ -149,10 +233,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 315px 0px 315px;
+  padding: 0px 23.06% 0px 23.06%;
 }
 
 .content__program__bottom--color {
@@ -178,14 +264,16 @@ body {
 }
 
 .content__panel {
+  width: 66.54%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 231px 0px 226px;
-  margin: 54px 0px 100px 0px;
+  margin: 54px auto 100px auto;
   color: #221E1F;
 }
 
@@ -314,8 +402,8 @@ body {
 }
 
 .question {
-  width: 904px;
   margin: 0 auto;
+  padding: 0px 231px 0px 231px;
 }
 
 .question__title {
@@ -393,12 +481,10 @@ body {
 }
 
 .footer__text {
-  width: 1366px;
-  height: 56px;
   background: #F5F5F5;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   .wrap {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg");
   }
@@ -413,20 +499,14 @@ body {
     padding: 24px 0px 16px 20px;
   }
   .header__title .header__logo {
-    width: 130.84px;
+    width: 138px;
     height: 24px;
   }
   .header__title .header__item {
     padding-right: 20px;
   }
   .header__title .header__price {
-    width: 128px;
-    height: 40px;
-    background: #FF5D50;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 20px;
-    color: #FFF;
+    line-height: 24px;
   }
   .hader__title_text {
     padding: 48px 0px 8px 20px;
@@ -470,9 +550,6 @@ body {
     padding: 60px 20px 0px 17px;
     margin-bottom: 24px;
   }
-  .content__program {
-    width: 375px;
-  }
   .content__program ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -483,7 +560,6 @@ body {
         flex-wrap: wrap;
   }
   .content__program__bottom--item {
-    width: 305px;
     height: 100px;
     padding: 0px 35px 0px 35px;
   }
@@ -507,20 +583,22 @@ body {
     color: #56C4C5;
   }
   .content__panel {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
     padding: 0px 20px 0px 20px;
-    margin: 32px 0px 60px 0px;
+    margin: 0;
   }
   .content__panel .content__panel__content {
-    width: 335px;
+    width: 100%;
     height: 515px;
     border-radius: 12px;
-    -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
     margin-top: 24px;
   }
   .content__panel__box {
@@ -583,7 +661,8 @@ body {
     margin: 19px 90px 0px 100px;
   }
   .question {
-    width: 339px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
   }
   .question__title {
     font-size: 28px;
